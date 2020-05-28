@@ -12,10 +12,13 @@ export class MessageComponent implements OnInit {
   somePerson: Person[];
 
   constructor(private personService: PersonService) { }
-
-  ngOnInit(): void {
+  getPeople() {
     this.personService.getPerson().subscribe(person => {
       this.somePerson = person;
     });
+  }
+
+  ngOnInit(): void {
+    this.getPeople();
   }
 }
