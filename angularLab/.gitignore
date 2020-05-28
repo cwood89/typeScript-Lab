@@ -44,8 +44,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-angularLab/node_modules
-.vscode
-Angular_basics_HW.pdf
-helloWorld/tsconfig.json
